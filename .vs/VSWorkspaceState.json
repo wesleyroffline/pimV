@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SignEvent_backend",
+    "\\SignEvent_backend\\SignEvent_backend\\SignEvent",
+    "\\SignEvent_backend\\SignEvent_backend\\SignEvent\\Data",
+    "\\SignEvent_backend\\SignEvent_backend\\SignEvent\\Models",
+    "\\SignEvent_backend\\SignEvent_backend\\SignEvent\\Services",
+    "\\SignEvent_front-end"
   ],
-  "SelectedNode": "\\LICENSE",
+  "SelectedNode": "\\SignEvent_backend\\SignEvent_backend.slnx",
   "PreviewInSolutionExplorer": false
 }

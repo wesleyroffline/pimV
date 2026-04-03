@@ -1,26 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\151741784\\Desktop\\projeto\\SignEvent_backend\\",
+  "WorkspaceRootPath": "C:\\Users\\151741784\\Documents\\GitHub\\pimV\\SignEvent_backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7EF79779-7450-FC31-6CAC-4252207AC3AA}|SignEvent_backend\\SignEvent_backend.csproj|c:\\users\\151741784\\desktop\\projeto\\signevent_backend\\signevent_backend\\signevent\\models\\participante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EF79779-7450-FC31-6CAC-4252207AC3AA}|SignEvent_backend\\SignEvent_backend.csproj|solutionrelative:signevent_backend\\signevent\\models\\participante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7EF79779-7450-FC31-6CAC-4252207AC3AA}|SignEvent_backend\\SignEvent_backend.csproj|c:\\users\\151741784\\desktop\\projeto\\signevent_backend\\signevent_backend\\signevent\\models\\inscricao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EF79779-7450-FC31-6CAC-4252207AC3AA}|SignEvent_backend\\SignEvent_backend.csproj|c:\\users\\151741784\\documents\\github\\pimv\\signevent_backend\\signevent_backend\\signevent\\models\\inscricao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EF79779-7450-FC31-6CAC-4252207AC3AA}|SignEvent_backend\\SignEvent_backend.csproj|solutionrelative:signevent_backend\\signevent\\models\\inscricao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EF79779-7450-FC31-6CAC-4252207AC3AA}|SignEvent_backend\\SignEvent_backend.csproj|c:\\users\\151741784\\desktop\\projeto\\signevent_backend\\signevent_backend\\signevent\\models\\atividade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EF79779-7450-FC31-6CAC-4252207AC3AA}|SignEvent_backend\\SignEvent_backend.csproj|solutionrelative:signevent_backend\\signevent\\models\\atividade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7EF79779-7450-FC31-6CAC-4252207AC3AA}|SignEvent_backend\\SignEvent_backend.csproj|c:\\users\\151741784\\desktop\\projeto\\signevent_backend\\signevent_backend\\signevent\\models\\evento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EF79779-7450-FC31-6CAC-4252207AC3AA}|SignEvent_backend\\SignEvent_backend.csproj|solutionrelative:signevent_backend\\signevent\\models\\evento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7EF79779-7450-FC31-6CAC-4252207AC3AA}|SignEvent_backend\\SignEvent_backend.csproj|c:\\users\\151741784\\desktop\\projeto\\signevent_backend\\signevent_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EF79779-7450-FC31-6CAC-4252207AC3AA}|SignEvent_backend\\SignEvent_backend.csproj|solutionrelative:signevent_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7EF79779-7450-FC31-6CAC-4252207AC3AA}|SignEvent_backend\\SignEvent_backend.csproj|c:\\users\\151741784\\documents\\github\\pimv\\signevent_backend\\signevent_backend\\signevent\\models\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EF79779-7450-FC31-6CAC-4252207AC3AA}|SignEvent_backend\\SignEvent_backend.csproj|solutionrelative:signevent_backend\\signevent\\models\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,68 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "inscricao.cs",
-              "DocumentMoniker": "C:\\Users\\151741784\\Desktop\\projeto\\SignEvent_backend\\SignEvent_backend\\SignEvent\\Models\\inscricao.cs",
-              "RelativeDocumentMoniker": "SignEvent_backend\\SignEvent\\Models\\inscricao.cs",
-              "ToolTip": "C:\\Users\\151741784\\Desktop\\projeto\\SignEvent_backend\\SignEvent_backend\\SignEvent\\Models\\inscricao.cs",
-              "RelativeToolTip": "SignEvent_backend\\SignEvent\\Models\\inscricao.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T12:53:25.09Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Atividade.cs",
-              "DocumentMoniker": "C:\\Users\\151741784\\Desktop\\projeto\\SignEvent_backend\\SignEvent_backend\\SignEvent\\Models\\Atividade.cs",
-              "RelativeDocumentMoniker": "SignEvent_backend\\SignEvent\\Models\\Atividade.cs",
-              "ToolTip": "C:\\Users\\151741784\\Desktop\\projeto\\SignEvent_backend\\SignEvent_backend\\SignEvent\\Models\\Atividade.cs",
-              "RelativeToolTip": "SignEvent_backend\\SignEvent\\Models\\Atividade.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T12:48:39.813Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Evento.cs",
-              "DocumentMoniker": "C:\\Users\\151741784\\Desktop\\projeto\\SignEvent_backend\\SignEvent_backend\\SignEvent\\Models\\Evento.cs",
-              "RelativeDocumentMoniker": "SignEvent_backend\\SignEvent\\Models\\Evento.cs",
-              "ToolTip": "C:\\Users\\151741784\\Desktop\\projeto\\SignEvent_backend\\SignEvent_backend\\SignEvent\\Models\\Evento.cs",
-              "RelativeToolTip": "SignEvent_backend\\SignEvent\\Models\\Evento.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T12:45:01.855Z"
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Participante.cs",
-              "DocumentMoniker": "C:\\Users\\151741784\\Desktop\\projeto\\SignEvent_backend\\SignEvent_backend\\SignEvent\\Models\\Participante.cs",
-              "RelativeDocumentMoniker": "SignEvent_backend\\SignEvent\\Models\\Participante.cs",
-              "ToolTip": "C:\\Users\\151741784\\Desktop\\projeto\\SignEvent_backend\\SignEvent_backend\\SignEvent\\Models\\Participante.cs",
-              "RelativeToolTip": "SignEvent_backend\\SignEvent\\Models\\Participante.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAVAAAAAAAAAA==",
+              "Title": "Inscricao.cs",
+              "DocumentMoniker": "C:\\Users\\151741784\\Documents\\GitHub\\pimV\\SignEvent_backend\\SignEvent_backend\\SignEvent\\Models\\Inscricao.cs",
+              "RelativeDocumentMoniker": "SignEvent_backend\\SignEvent\\Models\\Inscricao.cs",
+              "ToolTip": "C:\\Users\\151741784\\Documents\\GitHub\\pimV\\SignEvent_backend\\SignEvent_backend\\SignEvent\\Models\\Inscricao.cs",
+              "RelativeToolTip": "SignEvent_backend\\SignEvent\\Models\\Inscricao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T12:37:42.962Z",
+              "WhenOpened": "2026-04-03T19:43:00.702Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\151741784\\Desktop\\projeto\\SignEvent_backend\\SignEvent_backend\\Program.cs",
-              "RelativeDocumentMoniker": "SignEvent_backend\\Program.cs",
-              "ToolTip": "C:\\Users\\151741784\\Desktop\\projeto\\SignEvent_backend\\SignEvent_backend\\Program.cs",
-              "RelativeToolTip": "SignEvent_backend\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Administrador.cs",
+              "DocumentMoniker": "C:\\Users\\151741784\\Documents\\GitHub\\pimV\\SignEvent_backend\\SignEvent_backend\\SignEvent\\Models\\Administrador.cs",
+              "RelativeDocumentMoniker": "SignEvent_backend\\SignEvent\\Models\\Administrador.cs",
+              "ToolTip": "C:\\Users\\151741784\\Documents\\GitHub\\pimV\\SignEvent_backend\\SignEvent_backend\\SignEvent\\Models\\Administrador.cs",
+              "RelativeToolTip": "SignEvent_backend\\SignEvent\\Models\\Administrador.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T12:33:50.957Z"
+              "WhenOpened": "2026-04-03T19:42:48.167Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SignEvent_backend.SignEvent.Models
+namespace SignEvent.SignEvent.Models
 {
     public class Atividade
     {
@@ -12,12 +12,21 @@ namespace SignEvent_backend.SignEvent.Models
         public DateTime DataHora { get; set; }
         public string Palestrante { get; set; }
         public int Vagas { get; set; }
+        public int VagasOcupadas { get; set; }
         public string Local { get; set; }
         public bool TemLibras { get; set; }
+
+        // Verificador se tem vaga disponivel
+        public bool TemVagaDisponivel()
+        {
+            return VagasOcupadas < Vagas;
+        }
+
+        //Exibe as informacoes da atividade
         public override string ToString()
         {
             string libras = TemLibras ? "[COM LIBRAS]" : "";
-            return $"{DataHora:dd/mm/aaaa HH:MM} - {Titulo} - {Palestrante}{libras}";
+            return $"{DataHora:dd/mm/aaaa HH:MM} - {Titulo} - {Palestrante}{libras} - Vagas: {VagasOcupadas}/{Vagas}";
         }
     }
 }

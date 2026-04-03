@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SignEvent_backend.SignEvent.Models
+namespace SignEvent.SignEvent.Models
 {
     public class Inscricao
     {
@@ -13,6 +13,7 @@ namespace SignEvent_backend.SignEvent.Models
         public string Status { get; set; } //Confirmada ou Cancelada
         public bool Certificado_Emitido { get; set; }
 
+        //Define valores padrao
         public Inscricao()
         {
             AtividadesIds = new List<int>();
