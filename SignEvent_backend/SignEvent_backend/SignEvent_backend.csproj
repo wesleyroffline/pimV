@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <Folder Include="SignEvent\Data\" />
-    <Folder Include="SignEvent\Services\" />
   </ItemGroup>
 
 </Project>

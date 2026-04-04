@@ -1,0 +1,15 @@
+D:\Documents\Unip\Trabalhos\PIM V\pimV\SignEvent_backend\SignEvent_backend\obj\Debug\net10.0\SignEvent_backend.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Unip\Trabalhos\PIM V\pimV\SignEvent_backend\SignEvent_backend\obj\Debug\net10.0\SignEvent_backend.AssemblyInfoInputs.cache
+D:\Documents\Unip\Trabalhos\PIM V\pimV\SignEvent_backend\SignEvent_backend\obj\Debug\net10.0\SignEvent_backend.AssemblyInfo.cs
+D:\Documents\Unip\Trabalhos\PIM V\pimV\SignEvent_backend\SignEvent_backend\obj\Debug\net10.0\SignEvent_backend.csproj.CoreCompileInputs.cache
+D:\Documents\Unip\Trabalhos\PIM V\pimV\SignEvent_backend\SignEvent_backend\obj\Debug\net10.0\SignEvent_backend.sourcelink.json
+D:\Documents\Unip\Trabalhos\PIM V\pimV\SignEvent_backend\SignEvent_backend\bin\Debug\net10.0\SignEvent_backend.exe
+D:\Documents\Unip\Trabalhos\PIM V\pimV\SignEvent_backend\SignEvent_backend\bin\Debug\net10.0\SignEvent_backend.deps.json
+D:\Documents\Unip\Trabalhos\PIM V\pimV\SignEvent_backend\SignEvent_backend\bin\Debug\net10.0\SignEvent_backend.runtimeconfig.json
+D:\Documents\Unip\Trabalhos\PIM V\pimV\SignEvent_backend\SignEvent_backend\bin\Debug\net10.0\SignEvent_backend.dll
+D:\Documents\Unip\Trabalhos\PIM V\pimV\SignEvent_backend\SignEvent_backend\bin\Debug\net10.0\SignEvent_backend.pdb
+D:\Documents\Unip\Trabalhos\PIM V\pimV\SignEvent_backend\SignEvent_backend\obj\Debug\net10.0\SignEvent_backend.dll
+D:\Documents\Unip\Trabalhos\PIM V\pimV\SignEvent_backend\SignEvent_backend\obj\Debug\net10.0\refint\SignEvent_backend.dll
+D:\Documents\Unip\Trabalhos\PIM V\pimV\SignEvent_backend\SignEvent_backend\obj\Debug\net10.0\SignEvent_backend.pdb
+D:\Documents\Unip\Trabalhos\PIM V\pimV\SignEvent_backend\SignEvent_backend\obj\Debug\net10.0\SignEvent_backend.genruntimeconfig.cache
+D:\Documents\Unip\Trabalhos\PIM V\pimV\SignEvent_backend\SignEvent_backend\obj\Debug\net10.0\ref\SignEvent_backend.dll

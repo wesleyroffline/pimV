@@ -8,23 +8,23 @@
     "net10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\151741784\\.nuget\\packages\\": {},
+    "C:\\Users\\jefer\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\151741784\\Documents\\GitHub\\pimV\\SignEvent_backend\\SignEvent_backend\\SignEvent_backend.csproj",
+      "projectUniqueName": "D:\\Documents\\Unip\\Trabalhos\\PIM V\\pimV\\SignEvent_backend\\SignEvent_backend\\SignEvent_backend.csproj",
       "projectName": "SignEvent_backend",
-      "projectPath": "C:\\Users\\151741784\\Documents\\GitHub\\pimV\\SignEvent_backend\\SignEvent_backend\\SignEvent_backend.csproj",
-      "packagesPath": "C:\\Users\\151741784\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\151741784\\Documents\\GitHub\\pimV\\SignEvent_backend\\SignEvent_backend\\obj\\",
+      "projectPath": "D:\\Documents\\Unip\\Trabalhos\\PIM V\\pimV\\SignEvent_backend\\SignEvent_backend\\SignEvent_backend.csproj",
+      "packagesPath": "C:\\Users\\jefer\\.nuget\\packages\\",
+      "outputPath": "D:\\Documents\\Unip\\Trabalhos\\PIM V\\pimV\\SignEvent_backend\\SignEvent_backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\151741784\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jefer\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

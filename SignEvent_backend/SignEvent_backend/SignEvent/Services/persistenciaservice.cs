@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
 using SignEvent.Models;
+using SignEvent.SignEvent.Models;
 
 namespace SignEvent.Services
 {
