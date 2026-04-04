@@ -1,5 +1,7 @@
-﻿using SignEvent.Services;
-using SignEvent.SignEvent.Models; // Seu modelo
+﻿//Cadastro de participantes
+
+using SignEvent.Services;
+using SignEvent.SignEvent.Models;
 using SignEvent_backend.SignEvent.Services;
 using System;
 
