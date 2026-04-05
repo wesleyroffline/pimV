@@ -129,3 +129,167 @@ body {
     font-weight: 700;
     font-size: 0.85rem;
 }
+
+.app-header {
+    max-width: 1180px;
+    margin: 24px auto 0;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-actions .btn {
+    width: auto;
+    margin-top: 0;
+}
+
+.page-grid {
+    max-width: 1180px;
+    margin: 18px auto 34px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 18px;
+}
+
+.professor-layout {
+    grid-template-columns: 2fr 1fr;
+}
+
+.side-menu {
+    height: fit-content;
+}
+
+.section-title {
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-size: 1.2rem;
+}
+
+.menu-link {
+    display: block;
+    text-decoration: none;
+    color: #1e293b;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.menu-link.active,
+.menu-link:hover {
+    border-color: var(--brand);
+    background: #f0fdfa;
+}
+
+.content-stack {
+    display: grid;
+    gap: 16px;
+}
+
+.text-block {
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.quick-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.quick-link {
+    text-decoration: none;
+    color: #042f2e;
+    border-radius: 10px;
+    padding: 12px;
+    background: #ccfbf1;
+    border: 1px solid #99f6e4;
+    font-weight: 700;
+}
+
+.accessible-list {
+    margin: 0;
+    padding-left: 18px;
+    line-height: 1.6;
+}
+
+.responsive-video {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    min-height: 220px;
+    background: #0f172a;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 580px;
+}
+
+.schedule-table th,
+.schedule-table td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid var(--border);
+}
+
+.schedule-table th {
+    background: #f1f5f9;
+}
+
+.stack-form {
+    display: grid;
+    gap: 10px;
+}
+
+.stack-form select,
+.stack-form input,
+.stack-form textarea {
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 12px;
+    font-size: 0.95rem;
+    color: var(--text);
+    font-family: inherit;
+}
+
+.stack-form textarea {
+    resize: vertical;
+}
+
+@media (max-width: 900px) {
+    .app-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .header-actions {
+        justify-content: space-between;
+    }
+
+    .page-grid,
+    .professor-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .quick-links {
+        grid-template-columns: 1fr;
+    }
+}

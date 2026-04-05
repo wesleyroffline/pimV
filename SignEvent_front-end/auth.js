@@ -1,5 +1,9 @@
 const API_BASE_URL = window.API_BASE_URL || "";
 
+function normalizeRole(role) {
+    return (role || "").toString().trim().toUpperCase();
+}
+
 function getUser() {
     const raw = localStorage.getItem("user");
     if (!raw) {
@@ -44,7 +48,12 @@ async function authorizedFetch(path, options = {}) {
 }
 
 function setSession(response) {
-    localStorage.setItem("user", JSON.stringify(response.user));
+    const safeUser = {
+        ...(response.user || {}),
+        role: normalizeRole(response?.user?.role)
+    };
+
+    localStorage.setItem("user", JSON.stringify(safeUser));
     if (response.token) {
         localStorage.setItem("token", response.token);
     } else {
@@ -58,15 +67,17 @@ function clearSession() {
 }
 
 function roleToPage(role) {
-    if (role === "ADMIN") {
+    const normalizedRole = normalizeRole(role);
+
+    if (normalizedRole === "ADMIN") {
         return "admin.html";
     }
 
-    if (role === "ALUNO") {
+    if (normalizedRole === "ALUNO") {
         return "aluno.html";
     }
 
-    if (role === "PROFESSOR") {
+    if (normalizedRole === "PROFESSOR") {
         return "professor.html";
     }
 
@@ -74,7 +85,12 @@ function roleToPage(role) {
 }
 
 function redirectByRole(role) {
-    window.location.href = roleToPage(role);
+    const targetPage = roleToPage(role);
+    const currentPage = window.location.pathname.split("/").pop() || "";
+
+    if (currentPage !== targetPage) {
+        window.location.href = targetPage;
+    }
 }
 
 async function authenticate(username, password) {
@@ -118,7 +134,8 @@ function protectRoute(allowedRoles = []) {
         return null;
     }
 
-    if (allowedRoles.length > 0 && !allowedRoles.includes(user.role)) {
+    const allowedNormalized = allowedRoles.map(normalizeRole);
+    if (allowedNormalized.length > 0 && !allowedNormalized.includes(normalizeRole(user.role))) {
         redirectByRole(user.role);
         return null;
     }

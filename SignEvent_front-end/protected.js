@@ -4,9 +4,10 @@ const user = protectRoute([pageRole]);
 if (user) {
     const usernameElement = document.getElementById("usernameDisplay");
     const roleElement = document.getElementById("roleDisplay");
+    const nomeVisivel = user.username || user.nome || "Usuário";
 
     if (usernameElement) {
-        usernameElement.textContent = user.username;
+        usernameElement.textContent = nomeVisivel;
     }
 
     if (roleElement) {

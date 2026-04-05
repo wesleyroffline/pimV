@@ -1,15 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SignEvent_backend.SignEvent.Models
+﻿namespace SignEvent_backend.SignEvent.Models
 {
-    public class Administrador
+    /// <summary>
+    /// Usuário administrador com permissões de gestão no sistema.
+    /// </summary>
+    public class Administrador : UsuarioBase
     {
-        public int Id { get; set; }
-        public string Nome { get; set; } = string.Empty;
-        public string Email { get; set; } = string.Empty;
-        public string Senha { get; set; } = string.Empty;
+        public string Senha { get; private set; } = string.Empty;
+
+        public Administrador()
+        {
+        }
+
+        public Administrador(int id, string nome, string email, string senha)
+            : base(id, nome, email)
+        {
+            Senha = senha;
+        }
+
+        public void AtualizarSenha(string novaSenha)
+        {
+            Senha = novaSenha;
+        }
+
         // Autentica o administrador verificando email e senha
         public bool Autenticar(string email, string senha)
         {

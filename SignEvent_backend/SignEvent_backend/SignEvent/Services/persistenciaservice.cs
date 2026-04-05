@@ -4,12 +4,37 @@ using System.IO;
 using System.Text.Json;
 using SignEvent.Models;
 using SignEvent.SignEvent.Models;
+using SignEvent_backend.SignEvent.Services;
 
 namespace SignEvent.Services
 {
-    public class PersistenciaService
+    /// <summary>
+    /// Serviço de persistência de dados com logs para auditoria e apoio documental.
+    /// </summary>
+    public class PersistenciaService : IPersistenciaService
     {
-        private string caminhoArquivo = "dados_evento.json";
+        private readonly string caminhoArquivo = "dados_evento.json";
+        private readonly string caminhoLogErro = Path.Combine("SignEvent", "Data", "logs-erros.txt");
+        private readonly JsonSerializerOptions jsonOptions = new JsonSerializerOptions { WriteIndented = true };
+
+        private void RegistrarErro(string operacao, Exception ex)
+        {
+            try
+            {
+                var pastaLog = Path.GetDirectoryName(caminhoLogErro);
+                if (!string.IsNullOrWhiteSpace(pastaLog))
+                {
+                    Directory.CreateDirectory(pastaLog);
+                }
+
+                var linha = $"[{DateTime.Now:dd/MM/yyyy HH:mm:ss}] {operacao}: {ex.Message}{Environment.NewLine}";
+                File.AppendAllText(caminhoLogErro, linha);
+            }
+            catch
+            {
+                // Falha no log não deve interromper o fluxo principal.
+            }
+        }
 
         // Salvar todos os dados em um único arquivo
         public void SalvarDados(List<Participante> participantes, List<Evento> eventos,
@@ -25,13 +50,24 @@ namespace SignEvent.Services
                     Inscricoes = inscricoes
                 };
 
-                string json = JsonSerializer.Serialize(dados, new JsonSerializerOptions { WriteIndented = true });
+                string json = JsonSerializer.Serialize(dados, jsonOptions);
                 File.WriteAllText(caminhoArquivo, json);
                 Console.WriteLine("Dados salvos com sucesso");
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                Console.WriteLine("Erro de permissão ao salvar os dados.");
+                RegistrarErro("SalvarDados - Permissao", ex);
+            }
+            catch (IOException ex)
+            {
+                Console.WriteLine("Erro de I/O ao salvar os dados.");
+                RegistrarErro("SalvarDados - IO", ex);
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Erro ao salvar dados: {ex.Message}");
+                RegistrarErro("SalvarDados - Geral", ex);
             }
         }
 
@@ -54,9 +90,20 @@ namespace SignEvent.Services
                     }
                 }
             }
+            catch (JsonException ex)
+            {
+                Console.WriteLine("Arquivo de dados em formato inválido.");
+                RegistrarErro("CarregarDados - JSON", ex);
+            }
+            catch (IOException ex)
+            {
+                Console.WriteLine("Erro de I/O ao carregar os dados.");
+                RegistrarErro("CarregarDados - IO", ex);
+            }
             catch (Exception ex)
             {
                 Console.WriteLine($"Erro ao carregar dados: {ex.Message}");
+                RegistrarErro("CarregarDados - Geral", ex);
             }
 
             return (new List<Participante>(), new List<Evento>(),

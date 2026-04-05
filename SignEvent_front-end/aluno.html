@@ -7,17 +7,74 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body data-role="ALUNO">
-    <main class="dashboard">
-        <section class="card">
-            <h1 class="title">Área do Aluno</h1>
-            <p class="subtitle">Bem-vindo, <strong id="usernameDisplay"></strong>.</p>
+    <header class="app-header">
+        <div>
+            <h1 class="title">Ambiente Virtual do Participante</h1>
+            <p class="subtitle">Bem-vindo, <strong id="usernameDisplay"></strong>. Acesse programação, inscrição e certificados.</p>
+        </div>
+        <div class="header-actions">
             <span id="roleDisplay" class="badge"></span>
             <button id="logoutButton" class="btn btn-secondary" type="button">Sair</button>
+        </div>
+    </header>
+
+    <main class="page-grid">
+        <nav class="card side-menu" aria-label="Navegação do aluno">
+            <h2 class="section-title">Menu</h2>
+            <a class="menu-link active" href="aluno.html">Página Inicial</a>
+            <a class="menu-link" href="aluno-programacao.html">Programação</a>
+            <a class="menu-link" href="aluno-inscricao.html">Inscrição</a>
+            <a class="menu-link" href="aluno-area.html">Área do Participante</a>
+            <a class="menu-link" href="aluno-certificados.html">Consulta de Certificados</a>
+        </nav>
+
+        <section class="content-stack">
+            <article class="card">
+                <h2 class="section-title">Página Inicial</h2>
+                <p class="text-block">Este ambiente foi planejado para eventos acadêmicos de TI com foco na inclusão de pessoas surdas, tempo de resposta rápido e navegação clara.</p>
+                <div class="quick-links" role="list" aria-label="Acessos rápidos">
+                    <a class="quick-link" role="listitem" href="aluno-programacao.html">Ver Programação</a>
+                    <a class="quick-link" role="listitem" href="aluno-inscricao.html">Realizar Inscrição</a>
+                    <a class="quick-link" role="listitem" href="aluno-certificados.html">Consultar Certificado</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <h2 class="section-title">Glossário técnico em Libras</h2>
+                <p class="text-block">Termos prioritários para sinalização em vídeo e mediação com intérprete.</p>
+                <ul class="accessible-list">
+                    <li>Login: autenticação no sistema para acesso seguro.</li>
+                    <li>Inscrição: registro oficial em atividade ou evento.</li>
+                    <li>Certificado: comprovante digital de participação.</li>
+                    <li>Programação: agenda de palestras, oficinas e horários.</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h2 class="section-title">Vídeo instrucional em Libras</h2>
+                <p class="text-block">Substitua o arquivo de demonstração por um vídeo institucional sinalizado.</p>
+                <video controls class="responsive-video" aria-label="Vídeo de orientação com sinalização em Libras">
+                    <source src="media/orientacao-libras.mp4" type="video/mp4">
+                    <track kind="captions" srclang="pt-BR" label="Português" default>
+                    Seu navegador não suporta vídeo HTML5.
+                </video>
+            </article>
         </section>
     </main>
 
     <script src="config.js"></script>
     <script src="auth.js"></script>
     <script src="protected.js"></script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
 </body>
 </html>
