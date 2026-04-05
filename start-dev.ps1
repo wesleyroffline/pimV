@@ -31,42 +31,29 @@ if (-not (Test-Path $frontendDir)) {
 }
 
 $pythonCommand = Get-PythonCommand
-$backendProcess = $null
 $frontendProcess = $null
 
 try {
-    Write-Host "Iniciando backend..."
-    $backendProcess = Start-Process -FilePath "dotnet" -ArgumentList @("run", "--project", $backendProject) -WorkingDirectory $rootDir -PassThru
-
     Write-Host "Iniciando frontend em http://localhost:$frontendPort/login.html ..."
-    $frontendProcess = Start-Process -FilePath $pythonCommand.FileName -ArgumentList $pythonCommand.Arguments -WorkingDirectory $frontendDir -PassThru
+    $frontendProcess = Start-Process -FilePath $pythonCommand.FileName -ArgumentList $pythonCommand.Arguments -WorkingDirectory $frontendDir -PassThru -WindowStyle Hidden
 
     Write-Host ""
-    Write-Host "Projeto em execução"
+    Write-Host "Projeto em execucao"
     Write-Host "- Frontend: http://localhost:$frontendPort/login.html"
-    Write-Host "- Backend: em execução via dotnet run"
+    Write-Host "- Backend: iniciando via dotnet run (aguarde o build)..."
     Write-Host ""
     Write-Host "Pressione Ctrl + C para encerrar tudo."
+    Write-Host ""
 
-    while ($true) {
-        if ($backendProcess.HasExited -or $frontendProcess.HasExited) {
-            break
-        }
-
-        Start-Sleep -Seconds 1
-    }
+    & dotnet run --project $backendProject
 }
 finally {
     Write-Host ""
-    Write-Host "Encerrando serviços..."
-
-    if ($backendProcess -and -not $backendProcess.HasExited) {
-        Stop-Process -Id $backendProcess.Id -Force -ErrorAction SilentlyContinue
-    }
+    Write-Host "Encerrando servicos..."
 
     if ($frontendProcess -and -not $frontendProcess.HasExited) {
         Stop-Process -Id $frontendProcess.Id -Force -ErrorAction SilentlyContinue
     }
 
-    Write-Host "Serviços finalizados."
+    Write-Host "Servicos finalizados."
 }
