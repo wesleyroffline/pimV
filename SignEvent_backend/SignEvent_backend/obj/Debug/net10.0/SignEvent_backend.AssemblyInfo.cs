@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SignEvent_backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16fb87a8d80d247fd311b1e78ece735ef3f8bdf2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8377dd22cea85da68e33ce33cb5507edb68a2bc3")]
 [assembly: System.Reflection.AssemblyProductAttribute("SignEvent_backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SignEvent_backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
