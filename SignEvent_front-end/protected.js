@@ -19,6 +19,6 @@ const logoutButton = document.getElementById("logoutButton");
 if (logoutButton) {
     logoutButton.addEventListener("click", () => {
         clearSession();
-        window.location.href = "login.html";
+        window.location.href = "/login.html";
     });
 }

@@ -1,5 +1,12 @@
 const API_BASE_URL = window.API_BASE_URL || "";
 
+const APP_ROUTES = {
+    login: "/login.html",
+    admin: "/admin/",
+    aluno: "/aluno/",
+    professor: "/professor/"
+};
+
 function normalizeRole(role) {
     return (role || "").toString().trim().toUpperCase();
 }
@@ -70,25 +77,27 @@ function roleToPage(role) {
     const normalizedRole = normalizeRole(role);
 
     if (normalizedRole === "ADMIN") {
-        return "admin.html";
+        return APP_ROUTES.admin;
     }
 
     if (normalizedRole === "ALUNO") {
-        return "aluno.html";
+        return APP_ROUTES.aluno;
     }
 
     if (normalizedRole === "PROFESSOR") {
-        return "professor.html";
+        return APP_ROUTES.professor;
     }
 
-    return "login.html";
+    return APP_ROUTES.login;
 }
 
 function redirectByRole(role) {
     const targetPage = roleToPage(role);
-    const currentPage = window.location.pathname.split("/").pop() || "";
+    const currentPath = window.location.pathname.endsWith("/")
+        ? window.location.pathname
+        : `${window.location.pathname}${window.location.pathname.endsWith(".html") ? "" : "/"}`;
 
-    if (currentPage !== targetPage) {
+    if (currentPath !== targetPage && window.location.pathname !== targetPage) {
         window.location.href = targetPage;
     }
 }
@@ -121,7 +130,7 @@ function requireAuthenticatedUser() {
     const user = getUser();
 
     if (!user) {
-        window.location.href = "login.html";
+        window.location.href = APP_ROUTES.login;
         return null;
     }
 

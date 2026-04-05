@@ -276,20 +276,82 @@ body {
 
 @media (max-width: 900px) {
     .app-header {
+        margin-top: 18px;
+        padding: 0 16px;
         flex-direction: column;
         align-items: stretch;
+        gap: 12px;
     }
 
     .header-actions {
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .header-actions .btn {
+        width: 100%;
+    }
+
+    .badge {
+        align-self: flex-start;
+        margin-top: 0;
     }
 
     .page-grid,
     .professor-layout {
+        padding: 0 16px;
         grid-template-columns: 1fr;
+        gap: 14px;
     }
 
     .quick-links {
         grid-template-columns: 1fr;
+    }
+
+    .dashboard {
+        margin: 24px auto;
+        padding: 0 16px;
+    }
+
+    .card {
+        padding: 22px;
+    }
+
+    .title {
+        font-size: 1.35rem;
+    }
+
+    .subtitle {
+        margin-bottom: 16px;
+    }
+
+    .side-menu {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .side-menu .section-title {
+        grid-column: 1 / -1;
+        margin-bottom: 0;
+    }
+
+    .side-menu .menu-link {
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .table-wrap {
+        margin: 0 -4px;
+    }
+
+    .schedule-table {
+        min-width: 520px;
+    }
+
+    .responsive-video {
+        min-height: 180px;
     }
 }
