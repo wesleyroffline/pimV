@@ -8,11 +8,11 @@ namespace SignEvent.SignEvent.Models
     {
         //Identificador do evento
         public int Id { get; set; }
-        public string Nome { get; set; }
+        public string Nome { get; set; } = string.Empty;
         public DateTime Data_Inicio { get; set; }
         public DateTime Data_Fim { get; set; }
-        public string Local { get; set; }
-        public string Descricao { get; set; }
+        public string Local { get; set; } = string.Empty;
+        public string Descricao { get; set; } = string.Empty;
 
         //Metodo que mostra os dados do evento
         public override string ToString()

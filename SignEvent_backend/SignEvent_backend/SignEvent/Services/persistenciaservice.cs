@@ -66,10 +66,10 @@ namespace SignEvent.Services
         // Classe auxiliar para serialização
         private class DadosContainer
         {
-            public List<Participante> Participantes { get; set; }
-            public List<Evento> Eventos { get; set; }
-            public List<Atividade> Atividades { get; set; }
-            public List<Inscricao> Inscricoes { get; set; }
+            public List<Participante> Participantes { get; set; } = new List<Participante>();
+            public List<Evento> Eventos { get; set; } = new List<Evento>();
+            public List<Atividade> Atividades { get; set; } = new List<Atividade>();
+            public List<Inscricao> Inscricoes { get; set; } = new List<Inscricao>();
         }
     }
 }

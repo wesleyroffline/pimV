@@ -8,11 +8,11 @@ namespace SignEvent.SignEvent.Models
     {
         //Identificador do participante
         public int Id {  get; set; }
-        public string Nome { get; set; }
-        public string Email { get; set; }
-        public string CPF { get; set; }
-        public string Telefone { get; set; }
-        public string Tipo { get; set; } // Profissional ou Aluno
+        public string Nome { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public string CPF { get; set; } = string.Empty;
+        public string Telefone { get; set; } = string.Empty;
+        public string Tipo { get; set; } = string.Empty; // Profissional ou Aluno
 
         public DateTime Data_Inscricao { get; set; }
         //Verificador se o participante é ou não surdo

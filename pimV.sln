@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SignEvent_backend", "SignEvent_backend", "{939B2A81-77BD-6771-8B1F-62C87953B246}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignEvent_backend", "SignEvent_backend\SignEvent_backend\SignEvent_backend.csproj", "{C2FD9ACD-6873-48B4-5CC2-FD5FDEC66939}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2FD9ACD-6873-48B4-5CC2-FD5FDEC66939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2FD9ACD-6873-48B4-5CC2-FD5FDEC66939}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2FD9ACD-6873-48B4-5CC2-FD5FDEC66939}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2FD9ACD-6873-48B4-5CC2-FD5FDEC66939}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C2FD9ACD-6873-48B4-5CC2-FD5FDEC66939} = {939B2A81-77BD-6771-8B1F-62C87953B246}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8CE2EA8C-5C10-4F89-BE35-35A7520140C7}
+	EndGlobalSection
+EndGlobal

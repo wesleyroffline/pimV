@@ -6,10 +6,10 @@ namespace SignEvent.Models
     {
         public int Id { get; set; }
         public int IdParticipante { get; set; }
-        public string CodigoValidacao { get; set; }
+        public string CodigoValidacao { get; set; } = string.Empty;
         public DateTime DataEmissao { get; set; }
         public int CargaHoraria { get; set; }
-        public string CaminhoArquivo { get; set; }
+        public string CaminhoArquivo { get; set; } = string.Empty;
 
         //Gerador do codigo do certificado
 
